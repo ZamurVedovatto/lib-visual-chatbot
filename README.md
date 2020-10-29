@@ -1,6 +1,6 @@
 # lib-cbvisual
 
-> Made with create-react-library
+> Chatbot Visual
 
 [![NPM](https://img.shields.io/npm/v/lib-cbvisual.svg)](https://www.npmjs.com/package/lib-cbvisual) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -13,18 +13,21 @@ npm install --save lib-cbvisual
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'lib-cbvisual'
+import { ChatbotComponent } from 'lib-cbvisual'
 import 'lib-cbvisual/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+function App() {
+  return (
+    <div className="App">
+      <ChatbotComponent ws={'wss://web-socket-address'} />
+    </div>
+  );
 }
+
+export default App;
+
 ```
 
 ## License
 
-MIT © [zamur](https://github.com/zamur)
+MIT © [ZamurVedovatto](https://github.com/ZamurVedovatto)

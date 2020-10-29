@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { ExampleComponent } from 'lib-cbvisual'
+import { ChatbotComponent } from 'lib-cbvisual'
 import 'lib-cbvisual/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <ChatbotComponent ws={'wss://atendimento.omnisiga.com/chatbot/chatWS?cidade=1'} />
 }
 
 export default App
